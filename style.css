@@ -1,0 +1,183 @@
+@font-face {
+  font-family: "Inter";
+  src: url("fonts/Inter-Thin.ttf");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("fonts/Inter-Light.ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("fonts/Inter-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("fonts/Inter-Medium.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("fonts/Inter-SemiBold.ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("fonts/Inter-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("fonts/Inter-Black.ttf");
+  font-weight: 900;
+  font-style: normal;
+}
+
+
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+::-webkit-scrollbar-track {
+	background: #c8bc96;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #E2DCC8;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #E2DCC8;
+}
+
+::selection {
+    background-color: rgb(12, 12, 12);
+    color: #fff;
+}
+
+
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-color: rgb(255, 255, 255);
+	color: #5e5959;
+	font-family: Inter;
+}
+
+.clear-div {
+	clear: both;
+}
+
+img{
+	max-width: 100%;
+}
+
+header{
+	width: 100%;
+	height: 100vh;
+	animation: start ease-in-out 1s;
+	-webkit-animation: start ease-in-out 1s;
+}
+
+@keyframes start{
+	0% {
+		opacity: 0;
+	}
+	
+	30% {
+		opacity: 0;
+	}
+	
+	100% {
+		opacity: 1;
+	}
+}
+
+.wrapper_header{
+	width: 1200px;
+	margin: 0 auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+li{
+	text-decoration: none;
+	list-style-type: none;
+	transition: 0.4s;
+	-webkit-transition: 0.4s;
+}
+
+li h2{
+	font-size: 2.5em;
+	font-weight: 500;
+	margin-top: 75px;
+	color: rgb(48, 67, 81);
+}
+
+li a{
+	text-decoration: none;
+	color: rgb(48, 67, 81);
+}
+
+li:hover{
+	margin-left: 10px;
+	transition: 0.4s;
+	-webkit-transition: 0.4s;
+}
+
+li p{
+	font-size: 1em;
+	margin-bottom: 75px;
+	color: rgb(154, 171, 184);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1300px) {
+	.wrapper_header{
+		width: 80%;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	header{
+		height: auto;
+	}
+	.wrapper_header{
+		position: relative;
+		top: 0;
+		left: 0;
+		transform: translate(0, 0);
+		margin-top: 135px;
+		width: 85%;
+	}
+}
