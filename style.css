@@ -93,8 +93,8 @@ img{
 header{
 	width: 100%;
 	height: 100vh;
-	animation: start ease-in-out 1s;
-	-webkit-animation: start ease-in-out 1s;
+	animation: start ease-in-out 0.5s;
+	-webkit-animation: start ease-in-out 0.5s;
 }
 
 @keyframes start{
@@ -151,7 +151,23 @@ li p{
 	color: rgb(154, 171, 184);
 }
 
+#horizontal_list{
+	display: flex;
+	justify-content: space-between;
+}
 
+#horizontal_list li{
+	float: left;
+}
+
+#horizontal_list li:hover{
+	margin-left: 0;
+}
+
+h3{
+	font-weight: 500;
+	font-size: 1.5em;
+}
 
 
 
