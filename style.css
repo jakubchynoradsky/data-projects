@@ -184,10 +184,23 @@ h3{
 	}
 }
 
+@media only screen and (max-width: 900px) {
+	#horizontal_list{
+		display: block;
+	}
+
+	#horizontal_list li{
+		float: none;
+		margin-top: 75px;
+		margin-bottom: 75px;
+	}
+}
+
 @media only screen and (max-width: 600px) {
 	header{
 		height: auto;
 	}
+	
 	.wrapper_header{
 		position: relative;
 		top: 0;
