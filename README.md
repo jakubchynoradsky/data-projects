@@ -1,3 +1,3 @@
 # data-projects
 
-Selected data science projects.
+Selected personal data science projects.
